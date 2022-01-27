@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>
+    {% block title %}
+    
+    {% endblock  %}
+    </title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    
+    {% block body %}
+    
+    {% endblock  %}
+  </body>
+  <style>
+    .navpr ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .navpr li {
+      float: left;
+    }
+    .fr{
+      display: flex;
+      flex-direction:column;
+    }
+    a {
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .navpr a {
+      color: white;
+      display: block;
+    }
+    
+    .navpr a:hover {
+      background-color: #111;
+    }
+    </style>
+</html>
+

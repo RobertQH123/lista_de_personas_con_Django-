@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+    inicio
+{% endblock  %}
+{% block body %}
+{% include 'nav.html' %}
+<h1>Hola soy Robert</h1>
+<p>
+  {{myText|get_digit:"1" }}
+</p>
+<ul>
+  {% for item in myList %}
+    <li> {{ item }} </li>
+  {% endfor %}
+</ul>
+{% endblock %}
